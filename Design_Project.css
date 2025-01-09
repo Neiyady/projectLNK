@@ -1,0 +1,403 @@
+body {
+    height: auto;
+    width: auto;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+}
+section {
+    max-width: auto;
+    margin: 0 auto;
+    padding-top: 300px;  /*Добавлено, чтобы отодвинуть содержимое ниже */
+}
+.section1 {
+    background: url("imgDesign/Backgrownd1.png") no-repeat center center; /* Центрируем фон */
+    background-size: cover; /* Заполнение фона */
+    width: auto; /* Высота секции равна высоте экрана */
+}
+
+.section2 {
+    background: url("imgDesign/Backgrownd2.png") no-repeat center center; /* Центрируем фон */
+    background-size: cover; /* Заполнение фона */
+    width: auto; /* Высота секции равна высоте экрана */
+}
+.section3 {
+    background: url("imgDesign/Backgrownd3.png") no-repeat center center; /* Центрируем фон */
+    background-size: cover; /* Заполнение фона */
+    width: auto; /* Высота секции равна высоте экрана */
+    height: 700px;
+}
+.section4 {
+    background: url("imgDesign/Backgrownd4.png") no-repeat center center; /* Центрируем фон */
+    background-size: cover; /* Заполнение фона */
+    width: auto; /* Высота секции равна высоте экрана */
+    position: relative; /* Позволяет дочерним элементам с абсолютным позиционированием размещаться относительно этой секции */
+}
+.dark-background {
+    position: absolute; /* Позволяет элементу быть над фоном */
+    top: 0; /* Выровнять по верхней части секции */
+    left: 0; /* Выровнять по левой стороне секции */
+    width: 100%; /* Занять всю ширину секции */
+    height: 100%; /* Занять всю высоту секции */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    z-index: 1; /* Устанавливаем уровень слоя, чтобы он был под заголовками и изображениями */
+}
+.section4 .centered-image, .section4 img {
+    position: relative; /* Устанавливаем для этих элементов относительное позиционирование */
+    z-index: 2; /* Устанавливаем уровень слоя выше, чтобы они были над фоном */
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 83px;
+    align-items: center;
+    background-color: #131313;
+}
+footer {
+    display: flex;
+    width: 100%;
+    height: 83px;
+    align-items: center;
+    background-color: #131313;
+}
+.navigation_menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.navigation_menu a {
+    margin-right: auto;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Nunito Sans', serif;
+    font-size: 11px;
+    margin-left: auto;
+}
+
+.button_navigation {
+    width: 161px;
+    height: 37px;
+    font-size: 11px;
+    font-style: italic;
+    cursor: pointer;
+    background-color: #E3B873;
+    color: #FFFFFF;
+    border: none;
+    padding: 0px 20px;
+}
+
+.h1_page1 {
+    position: absolute; /* Устанавливаем абсолютное позиционирование */
+    left: 134px;     /* Установка координаты X */
+    top: 277px;      /* Установка координаты Y */
+    width: 350px;
+    height: 105px;
+    margin: 0;        /* Убираем отступы */
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.h1_page3 {
+    position: absolute; /* Устанавливаем абсолютное позиционирование */
+    left: 134px;     /* Установка координаты X */
+    margin-top: -130px;
+    width: 411px;
+    height: 66px;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    color: #E3B873;
+}
+.p_page {
+    position: relative;
+    font-family: "Nunito Sans", serif;
+    font-weight: lighter;
+    color: #FFFFFF;
+    left: 90px;     /* Установка координаты X */
+}
+
+.button_body1, .button_body2 {
+    position: relative;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 207px;
+    height: 51px;
+    font-size: 11px;
+    font-style: italic;
+    cursor: pointer;
+    background-color: #E3B873;
+    color: #FFFFFF;
+    border: none;
+    padding: 0px 20px;
+    left: 90px;     /* Установка координаты X */
+}
+
+.button_body2 {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.ol_1 {
+    display: grid;
+    grid-auto-flow: column;
+    list-style-type: none;
+    width: 800px;
+    padding: 10px;
+    position: absolute; /* Устанавливаем абсолютное позиционирование */
+    right: 0;          /* Выравниваем к правой стороне страницы */
+    top: 95%;
+}
+
+li a {
+    text-decoration: none;   
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.h2_page2 {
+    position: absolute;
+    font-family: "Yeseva One", serif;
+    font-size: 27px;
+    color: #E3B873;
+    left: 90px;
+    top: 110%;
+}
+.h3_page2 {
+    position: relative;
+    font-family: "Yeseva One", serif;
+    font-size: 18px;
+    color: #E3B873;
+    left: 90px;
+}
+.info_container {
+    display: flex; /* Используем flexbox для размещения элементов в одной строке */
+    align-items: center; /* Вертикальное центрирование */
+    gap: 20px; /* Отступ между элементами */
+}
+.info_item {
+   display: flex;  /* Используем flexbox для выравнивания заголовка и параграфа */
+   flex-direction: column;  /* Размещаем заголовок и параграф вертикально */
+}
+.picture1 {
+    position: relative;
+    margin-top: -170px; /* Установите отрицательный верхний отступ */
+    margin-right: -20px;
+    float: right; /* Выравнивание по правому краю */
+   }
+   .centered-image {
+    display: block; 
+    margin-left: 45%; 
+    margin-right: auto;
+}
+.image-container {
+    position: relative;
+    display: inline-block; /* Для центрирования */
+    margin-left: 16%; 
+}
+
+.image-container img {
+    display: block; /* Убираем пробелы снизу */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%; /* Центрируем по вертикали */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем на половину ширины и высоты */
+}
+label {
+    font-size: 12px;
+    opacity: 0.7;
+    display: block; /* Это поможет разместить label выше input */
+    margin-bottom: 5px; /* Отступ между label и полем ввода */
+}
+.foot_images {
+    width: auto; /* Задаем ширину 100% для карточек */
+    height: auto; /* Автоматическая высота */
+    display: flex;
+    align-items: center; /* Вертикальное центрирование */
+    gap: 20px;
+    margin-top: -180px;
+    margin-bottom: 40px;
+}
+.foot_images1 {
+    display: flex; /* Используем flexbox для расположения элементов в строку */
+    gap: 20px; /* Расстояние между элементами в 20px */
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+.frame_page2 {
+    position: relative; /* Устанавливаем позиционирование */
+    background-color: #FFFFFF; /* Цвет заполнения */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Эффект Drop Shadow */
+    margin: 20px; /* Отступы вокруг фрейма */
+    text-align: center; /* Центрирование текста внутри фрейма */
+}
+.frame_page3 {
+    position: relative; /* Устанавливаем позиционирование */
+    background-color: #FFFFFF; /* Цвет заполнения */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Эффект Drop Shadow */
+    text-align: left; /* Выравнивание текста влево */
+    padding: 10px; /* Отступы внутри фрейма */
+    margin: 10rem;
+}
+.frame_page2 img {
+    display: block; /* Убираем пробелы снизу */
+    margin: 0; /* Убираем отступы */
+}
+.overlay {
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 0; /* Позиционируем внизу */
+    left: 10%; /* Центрируем по горизонтали */
+    transform: translateY(90%); /* Сдвигаем на половину ширины для центрирования */
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для читаемости */
+    padding: 10px; /* Отступ внутри оверлея */
+    width: 100%; /* Занимает всю ширину фрейма */
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3); /* Тень для оверлея */
+    height: 286px;
+    width: 300px;
+    margin-bottom: 40px;
+}
+.frame_page2 button {
+    margin-top: 10px; /* Отступ сверху для кнопки */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    background-color: #E3B873; /* Цвет кнопки */
+    border: none; /* Без границы */
+    color: white; /* Цвет текста кнопки */
+    cursor: pointer; /* Курсор при наведении */
+}
+.ol_after_foto6 {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    padding: 20px; /* Отступы вокруг списка */
+    margin: auto; /* Центрируем список */
+    margin-left: 20rem;
+    max-width: 378px; /* Максимальная ширина списка */
+    margin-top: -35rem;
+    counter-reset: num; /* Сбрасываем счетчик перед началом списка */
+}
+
+.ol_after_foto6 li {
+    font-family: 'Nunito Sans', sans-serif; /* Шрифт для элементов списка */
+    font-size: 14px; /* Размер шрифта */
+    color: #363636; /* Цвет текста */
+    margin: 60px; /* Отступы между элементами списка */
+    position: relative; /* Устанавливаем относительное позиционирование для маркеров */
+    padding-left: 30px; /* Отступ для текста, чтобы не накладывался на маркер */
+}
+
+.ol_after_foto6 li::before {
+    content: counter(num, decimal-leading-zero); /* Форматирование с нулями */
+    counter-increment: num; /* Увеличиваем счетчик для каждого элемента списка */
+    position: absolute; /* Абсолютное позиционирование для маркера */
+    left: 0; /* Сдвигаем маркер влево */
+    color: #E3B873; /* Цвет маркера */
+    border-radius: 50%; /* Делаем маркер круглыми */
+    width: 20px; /* Ширина маркера */
+    height: 20px; /* Высота маркера */
+    display: flex; /* Используем flexbox для центрирования текста внутри маркера */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    background-color: #E3B873; /* Цвет маркера */
+    margin-right: 10px; /* Отступ между маркером и текстом */
+    color: #FFFFFF; /* Цвет текста внутри маркера */
+    font-weight: bold; /* Жирный шрифт для текста внутри маркера */
+}
+.foto-container_page2 {
+    display: flex;
+    justify-content: flex-start; /* Выравнивание по горизонтали */
+    align-items: center; /* Выравнивание по вертикали, если необходимо */
+    margin-top: 13rem;
+}
+
+.foto-container_page2 img {
+    margin-right: 20px; /* Расстояние между изображениями */
+}
+.ul_1 {
+    list-style-type: none;
+    width: 299px;
+    height: auto;
+    padding: 10px;
+    position: relative; /* Устанавливаем абсолютное позиционирование */
+    left: 134px;          /* Выравниваем к правой стороне страницы */
+    margin-top: -20px;
+    font-family: 'Nunito Sans', sans-serif; /* Шрифт для элементов списка */
+    font-size: 20px; /* Размер шрифта */
+    color: #FFFFFF;
+}
+.ul_1 li {
+    margin-bottom: 40px; /* Задаем отступ снизу в 40 пикселей */
+}
+.foto-container_page3 {
+    display: flex;
+    flex-direction: column; /* Изменено на column для вертикального расположения */
+    justify-content: center; /* Центрируем по вертикали */
+    align-items: center; /* Центрируем по горизонтали */
+    margin-top: -70rem;
+}
+
+.foto-container_page3 img {
+    margin-bottom: 40px; /* Расстояние между изображениями */
+}
+.foto-container_page4 {
+    display: flex;
+    flex-direction: column; /* Изменено на column для вертикального расположения */
+    justify-content: center; /* Центрируем по вертикали */
+    align-items: center; /* Центрируем по горизонтали */
+    margin-top: -70rem;
+    margin-left: 60%;
+}
+
+.foto-container_page4 img {
+    margin-bottom: 40px; /* Расстояние между изображениями */
+}
+.input1 {
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #E3B873; /* Нижнее подчеркивание светлого цвета */
+}
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .h1_page1, .h1_page3 {
+        font-size: 24px; /* Уменьшение размера шрифта заголовков на мобильных */
+    }
+
+    .navigation_menu {
+        flex-direction: column; /* Вертикальная ориентация навигации */
+    }
+
+    .button_body1, .button_body2 {
+        width: 100%; /* Кнопки занимают всю ширину */
+    }
+
+    .info_container {
+        flex-direction: column; /* Вертикальная ориентация для мобильных */
+        align-items: flex-start; /* Выравнивание по левому краю */
+    }
+
+    .p_page {
+        padding: 0 10px; /* Отступ для текста на мобильных */
+    }
+
+    .overlay {
+        padding: 5px; /* Уменьшенные отступы для оверлея на мобильных */
+    }
+}
+
+@media (max-width: 480px) {
+    .h1_page1, .h1_page3 {
+        font-size: 20px; /* Дальнейшее уменьшение размера шрифта заголовков */
+    }
+
+    .button_body1, .button_body2 {
+        height: 40px; /* Уменьшение высоты кнопок */
+    }
+
+    .input1 {
+        padding: 8px; /* Уменьшенный padding для полей ввода */
+    }
+}
